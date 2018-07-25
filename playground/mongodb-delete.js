@@ -17,7 +17,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true
   });
 
   //findOneDelete
-  db.collection('Todos').findOneDelete({ text: 'Learn Node' })
+  db.collection('Todos').findOneAndDelete({ text: 'Learn Node' })
   .then(result => {
     console.log(result);
   });

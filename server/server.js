@@ -23,3 +23,5 @@ app.post('/todos', (req , res) => {
 app.listen(3000 , () => {
   console.log('You are being served on port 3000');
 });
+
+module.exports = { app };
